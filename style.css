@@ -1,0 +1,106 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+
+.container {
+    width: 1250px;
+    margin: 35px auto;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: wheat;
+}
+
+h1{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+li{
+    margin: 10px;
+}
+.logo-center {
+    display: flex;
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+ol {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+label {
+    font-size: 20px;
+}
+
+select,
+input {
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: darkslategray;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button {
+    font-size: 25px;
+    padding: 15px 55px;
+    background-color: lightcoral;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: block;
+    margin: 30px auto;
+}
+
+#resultado {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid lightcoral;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease;
+    color: #333;
+}
+
+.modo-oscuro-activado {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.modo-oscuro-activado .container {
+    background-color: darkslategrey;
+}
+
+.modo-oscuro-activado h1,
+.modo-oscuro-activado h2 {
+    color: whitesmoke;
+}
+
+.modo-oscuro-activado select,
+.modo-oscuro-activado input {
+    background-color: darkred;
+    color: black;
+}
+
+.modo-oscuro-activado button {
+    background-color: darkred;
+}

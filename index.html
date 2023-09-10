@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GatoGamer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="container">
+        <img src="img/pngwing.com.png" alt="Logo" class="logo-center">
+        <h1>GatoGamer</h1>
+        <h2>Instrucciones</h2>
+        <p>
+           <h3> Calculadora de precios orientada a videojuegos</h3>
+        </p>
+        <p>
+            Para utilizar la calculadora, siga los siguientes pasos:
+        </p>
+        <ol>
+            <li>Ingresa la cantidad a convertir. Por ejemplo, si deseas convertir
+                60 Dólares Americanos (precio de un videojuego triple A), ingresa "60".</li>
+                <li>Seleccione la moneda de tu pais (o a la cual usted desea saber).</li>
+            <li>Seleccione la moneda que desea convertir en el primer cuadro</li>
+        </ol>
+        
+        <div class="select-container">
+            <label for="cantidad">Cantidad a Convertir:</label>
+            <input type="number" id="cantidad" placeholder="100">
+        </div>
+        <div class="select-container">
+            <label for="deMoneda">Moneda de Origen:</label>
+            <select id="deMoneda">
+                <option value="USD">USD (Estados unidos)</option>
+                <option value="EUR">EUR (Euro)</option>
+                <option value="UYU">UYU (Uruguay)</option>
+                <option value="ARS">ARS (Argentina)</option>
+                <option value="CLP">CLP (Chile)</option>
+                <option value="BRL">BRL (Brasil)</option>
+            </select>
+        </div>
+        <div class="select-container">
+            <label for="aMoneda">Moneda de Destino:</label>
+            <select id="aMoneda">
+                <option value="USD">USD (Estados unidos)</option>
+                <option value="EUR">EUR (Euro)</option>
+                <option value="UYU">UYU (Uruguay)</option>
+                <option value="ARS">ARS (Argentina)</option>
+                <option value="CLP">CLP (Chile)</option>
+                <option value="BRL">BRL (Brasil)</option>
+            </select>
+        </div>
+        <button id="btnConvertir" class="button">Convertir</button>
+        <div id="resultado"></div>
+        <button id="modoOscuroBtn" class="button">Modo Oscuro</button>
+        <div id="historial" class="select-container"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
